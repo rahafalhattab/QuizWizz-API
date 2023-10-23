@@ -1,0 +1,30 @@
+{
+  "name": "quizwizz-gpt-api",
+  "version": "1.0.0",
+  "description": "The project \"QuizWizz\" \" is a server-side application that leverages the OpenAI API to generate, validate, and explain multiple-choice questions for educational tests.",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "crypto": "^1.0.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.4.1",
+    "mammoth": "^1.6.0",
+    "openai": "^3.3.0",
+    "pdf-parse": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/pdf-parse": "^1.1.1",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
