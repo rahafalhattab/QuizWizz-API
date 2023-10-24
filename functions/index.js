@@ -19,7 +19,7 @@ const db = admin.firestore();
 // Initialize OpenAI
 const configuration = new Configuration({
     organization: "org-3RXh4TPeEq54RD3fXTUXs9V9",
-    apiKey: "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",
+    apiKey: "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",
 });
 const openai = new OpenAIApi(configuration);
 
